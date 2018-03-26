@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		880D42DF20565F9A007E5DC8 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880D42DE20565F9A007E5DC8 /* TaskTableViewCell.swift */; };
+		88151B682056474A00D0B080 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88151B672056474A00D0B080 /* TaskModel.swift */; };
 		882331B52055E151004E1F97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882331B42055E151004E1F97 /* AppDelegate.swift */; };
 		882331BC2055E151004E1F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882331BA2055E151004E1F97 /* Main.storyboard */; };
 		882331BE2055E151004E1F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882331BD2055E151004E1F97 /* Assets.xcassets */; };
 		882331C12055E151004E1F97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882331BF2055E151004E1F97 /* LaunchScreen.storyboard */; };
 		882331CC2055E151004E1F97 /* Task_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882331CB2055E151004E1F97 /* Task_AppTests.swift */; };
 		882331D72055E513004E1F97 /* TaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882331D62055E513004E1F97 /* TaskTableViewController.swift */; };
+		882331D92055FD1B004E1F97 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882331D82055FD1B004E1F97 /* NewTaskViewController.swift */; };
+		88A935EB2069AB570029DFC7 /* CheckmarkControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A935EA2069AB570029DFC7 /* CheckmarkControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		880D42DE20565F9A007E5DC8 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		88151B672056474A00D0B080 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		882331B12055E151004E1F97 /* Task App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		882331B42055E151004E1F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		882331BB2055E151004E1F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,6 +42,8 @@
 		882331CB2055E151004E1F97 /* Task_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task_AppTests.swift; sourceTree = "<group>"; };
 		882331CD2055E151004E1F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		882331D62055E513004E1F97 /* TaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewController.swift; sourceTree = "<group>"; };
+		882331D82055FD1B004E1F97 /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
+		88A935EA2069AB570029DFC7 /* CheckmarkControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,10 @@
 			children = (
 				882331B42055E151004E1F97 /* AppDelegate.swift */,
 				882331D62055E513004E1F97 /* TaskTableViewController.swift */,
+				882331D82055FD1B004E1F97 /* NewTaskViewController.swift */,
+				880D42DE20565F9A007E5DC8 /* TaskTableViewCell.swift */,
+				88A935EA2069AB570029DFC7 /* CheckmarkControl.swift */,
+				88151B672056474A00D0B080 /* TaskModel.swift */,
 				882331BA2055E151004E1F97 /* Main.storyboard */,
 				882331BD2055E151004E1F97 /* Assets.xcassets */,
 				882331BF2055E151004E1F97 /* LaunchScreen.storyboard */,
@@ -200,6 +212,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				882331D72055E513004E1F97 /* TaskTableViewController.swift in Sources */,
+				88A935EB2069AB570029DFC7 /* CheckmarkControl.swift in Sources */,
+				882331D92055FD1B004E1F97 /* NewTaskViewController.swift in Sources */,
+				880D42DF20565F9A007E5DC8 /* TaskTableViewCell.swift in Sources */,
+				88151B682056474A00D0B080 /* TaskModel.swift in Sources */,
 				882331B52055E151004E1F97 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
