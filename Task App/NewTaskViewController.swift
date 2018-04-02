@@ -11,7 +11,7 @@ class NewTaskViewController: UIViewController,
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //handles the users input through delegation.
         taskText.delegate = self
         
         if let task = task{
@@ -24,10 +24,12 @@ class NewTaskViewController: UIViewController,
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         saveButton.isEnabled = false
+        //if user is editing task, disables save button
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        //hides keyboard once user finishes writing out the task
         return true
     }
     
@@ -37,7 +39,7 @@ class NewTaskViewController: UIViewController,
     }
     
     @IBAction func cancelButton(_ sender: Any) {
-        
+        //returns to homescreen when user hits cancel button
         let isPresentingInAddTaskMode = presentingViewController is UINavigationController
         
         if isPresentingInAddTaskMode {
@@ -47,17 +49,16 @@ class NewTaskViewController: UIViewController,
             owningNavigationController.popViewController(animated: true)
         }
         else {
-            fatalError("The MealViewController is not inside a navigation controller.")
+            fatalError("The NewTaskViewController is not inside a navigation controller.")
         }
     }
   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+
         super.prepare(for: segue, sender: sender)
         
-        // Configure the destination view controller only when the save button is pressed.
         guard let button = sender as? UIBarButtonItem, button === saveButton else {
-            os_log("The save button was not pressed, cancelling", log: OSLog.default, type: .debug)
+            os_log("Cancelling proccess, save button was not pressed. ", log: OSLog.default, type: .debug)
             return
         }
         

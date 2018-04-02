@@ -7,7 +7,8 @@ class TaskTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //Loads saved tasks
         if let savedTasks = loadTasks(){
             tasks += savedTasks
         }
@@ -44,7 +45,7 @@ class TaskTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         super.prepare(for: segue, sender: sender)
-        
+        //Uses switch case to decipher whether or not your adding a new task or checking the details of the task already clicked.
         switch(segue.identifier ?? ""){
             
         case "AddTask":
@@ -71,6 +72,7 @@ class TaskTableViewController: UITableViewController {
     }
     
     @IBAction func unwindToTaskList(sender: UIStoryboardSegue){
+        //updates or creates a new task depending.
         if let sourceViewController = sender.source as?
             NewTaskViewController, let task = sourceViewController.task{
             if let selectedIndexPath = tableView.indexPathForSelectedRow{
@@ -100,13 +102,4 @@ class TaskTableViewController: UITableViewController {
         
     }
     
-    
-   /* override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if tableView.cellForRow(at: indexPath)?.accessoryType == UITableViewCellAccessoryType.checkmark{
-            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.none
-        }else{
-            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
-        }
-        
-    }*/
 }

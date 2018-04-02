@@ -4,8 +4,9 @@ class TaskTableViewCell: UITableViewCell {
     
     //Task Properties
     @IBOutlet weak var taskLabel: UILabel!
+    @IBAction func checkbox(_ sender: CheckmarkControl) {
+    }
     
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

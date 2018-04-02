@@ -32,12 +32,20 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVJ-Zm-9iB">
-                                            <rect key="frame" x="16" y="0.0" width="343" height="32"/>
+                                            <rect key="frame" x="16" y="0.0" width="264" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5r1-ee-zb1" customClass="CheckmarkControl" customModule="Task_App" customModuleProvider="target">
+                                            <rect key="frame" x="337" y="5" width="22" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button" image="checkbox"/>
+                                            <connections>
+                                                <action selector="checkbox:" destination="BDP-IR-Onb" eventType="touchUpInside" id="BGa-sQ-d1n"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
@@ -142,7 +150,10 @@
             <point key="canvasLocation" x="1518" y="734"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="checkbox" width="20" height="20"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LEM-rz-qWU"/>
+        <segue reference="8Vc-j1-QIx"/>
     </inferredMetricsTieBreakers>
 </document>
